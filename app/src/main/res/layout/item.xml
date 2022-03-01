@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/itemImageHeight"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    app:cardBackgroundColor="@android:color/white"
+                                    app:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/darker_gray"/>
+
+        <FrameLayout
+            android:id="@+id/popularityContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/itemPopularityHeight"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:minWidth="@dimen/itemPopularityHeight"
+            android:background="@drawable/layout_rounded_corner_background">
+
+            <TextView
+                android:id="@+id/popularityTextView"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:drawableLeft="@drawable/ic_stars_white_24dp"
+                android:layout_width="wrap_content"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                tools:text="1"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_alignBottom="@id/imageView"
+            android:background="@color/translucent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            tools:text="Just a Movie TitleJust a Movie TitleJust a Movie TitleJust a Movie Title"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
